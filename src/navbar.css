@@ -1,0 +1,106 @@
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    transition: 1s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #FEFE00;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Logo span{
+    color: #FEFE00;
+}
+
+.Logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.Logo:hover{
+    transition: 1s;
+    color: #FEFE00;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.nav_toggler {
+    display: none;
+}
+
+.nav_toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(204, 204, 204);
+    transition: 0.3s ease-in;
+}
+
+.icons label a{
+    margin-left: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav_toggler{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        height: 93vh;
+        width: 40vw;
+        background: rgb(17, 16, 16);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+}
+
+/*Ativar o navegador*/
+
+.nav_active{
+    transform: translateX(0%)
+}
+
+/*Ativar o navegador*/
+
+/*Animar o meu toggle*/
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line1{
+    opacity: 0;
+}
+.toggle .line1{
+    transform: rotate(45deg) translate(-4px, 5px);
+}

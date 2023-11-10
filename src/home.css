@@ -1,0 +1,94 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 1280;
+    height: 800;
+    display: flex;
+    flex-direction:row;
+    margin-top: 100px;
+    align-items: center; 
+    justify-content: center;
+    gap: 100px;
+}
+
+h2{
+    font-size: 50px;
+    color: yellow;
+}
+
+h3{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: white;
+}
+
+.lista-imagens {
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.botao {
+    background-color: yellow;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.botao:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@media screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .lista-imagens {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .imagem-minha{
+        width: 300px;
+    }
+}
