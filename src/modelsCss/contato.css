@@ -1,0 +1,89 @@
+
+.main-contato{
+    display: block;
+    color: white;
+}
+
+
+.titulos, .detalhes{
+    margin-left: 50px;
+}
+
+.titulos p {
+    color: yellowgreen;
+    font-size: 15px;
+}
+
+.detalhes{
+    display: flex;
+}
+
+.bar{
+    background-color: yellow;
+    width: 250px;
+    height: 3px;
+}
+
+.ball{
+    background-color: yellow;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+
+}
+
+.contatos h2 {
+    color: white;
+    margin: 20px 0 0 50px;
+    font-size: 20px;
+
+}
+
+.lista-contatos {
+    list-style: none;
+    margin: 20px 0 20px 50px;
+}
+
+.lista-contatos li {
+    margin-top: 40px;
+    font-size: 15pt; 
+}
+
+
+.lista-contatos span {
+    color: white;
+    transition: 1s;
+}
+
+.lista-contatos span:hover{
+    color: yellow;
+}
+
+.tamanho-icone{
+    font-size: 24px;
+    color: white;
+}
+
+.linha-final{
+    background-color: yellow;
+    width: 100%;
+    height: 2px;
+}
+
+.copyraty{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .titulos p{
+        display: none;
+    }
+    .contatos h2 {
+        text-align: start;
+    }
+    .lista-contatos{
+        margin: 0 10px 20px
+    }
+}

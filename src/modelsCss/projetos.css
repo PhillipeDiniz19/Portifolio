@@ -1,0 +1,130 @@
+
+.Main-projetos{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.Main-projetos h1{
+    text-align: center;
+    color: yellow;
+}
+
+.Main-projetos h3{
+    text-align: center;
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+.ProjetosOnline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 44px 34px 44px;
+}
+
+.elementor-filho{
+    width: 400px;
+    height: 400px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+
+    overflow: hidden; /*tudo que passar da da bordar a cortado*/
+
+}
+
+.elementor-filho img {
+    width: 100%;
+    max-width: 20%;
+    margin-top: 10px;
+    transition: 0.2s;
+    
+}
+
+.elementor-filho img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.info-projetos{
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 99; /*Camada da info*/
+}
+
+.info-projetos p {
+    font-size: 15px;
+}
+
+.info-projetos button {
+    background-color: #FEFE00;
+    color: black;
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.imagensprojetos img{
+    width: 100%;
+    max-width: 10%;
+    margin: 5px;
+}
+
+.info-projetos a{
+    color: black;
+}
+
+.info-projetos a:hover{
+    color: black;
+}
+
+
+span {
+    color: #FEFE00;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.info-projetos button:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@media screen and (max-width: 768px) {
+    .ProjetosOnline{
+        flex-direction: column;
+    }
+}
+
+
+

@@ -13,14 +13,15 @@ main {
     gap: 100px;
 }
 
+
 h2{
     font-size: 50px;
-    color: yellow;
+    color: #FEFE00;
 }
 
 h3{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -38,7 +39,7 @@ span{
 }
 
 .botao {
-    background-color: yellow;
+    background-color: #FEFE00;
     color: black;
     width: 150px;
     height: 30px;
@@ -69,6 +70,8 @@ span{
 
 
 @media screen and (max-width: 768px) {
+    
+    
     main{
         flex-direction: column;
     }
@@ -82,13 +85,21 @@ span{
         text-align: center;
     }
 
-    .lista-imagens {
+    .lista-imagens{
         display: flex; 
         align-items: center; 
         justify-content: center;
     }
 
+    .botao{ 
+        display: flex;
+        margin: 0 auto;
+        align-items: center; 
+        justify-content: center;
+    }
+
     .imagem-minha{
-        width: 300px;
+        display: none;
     }
 }
+

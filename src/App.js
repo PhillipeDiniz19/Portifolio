@@ -1,12 +1,16 @@
-import NavBar from "./components/NavBar";
-import './globalcss.css'
+import './modelsCss/globalcss.css'
 import Home from './components/Home'
+import Contato from './components/contato';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
+
   return (
       <div>
-        <NavBar/>
         <Home/>
+        <Contato/>      
+        <ScrollToTop/>
       </div>
   );
 }
