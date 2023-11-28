@@ -36,12 +36,16 @@ a{
 
 
 .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 8vh;
     background-color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 100;
 }
 
 .Logo {
@@ -93,7 +97,7 @@ a{
     }
     .nav_menu{
         position:absolute;
-        top: 10vh;
+        top: 8vh;
         right: 0;
         height: 90vh;
         width: 100vw;

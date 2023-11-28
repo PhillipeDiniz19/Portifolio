@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { FaAngleUp } from "react-icons/fa"
 
 
+
 const ScrollToTop = () => {
   const [pageYPosition, setPageYPosition] = useState(0);
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0,  behavior: "smooth" });
   };
 
   return (
@@ -19,11 +20,12 @@ const ScrollToTop = () => {
         bottom: 30,
         right: 30,
         borderRadius: "50%",
-        background: "white",
+        background: "black",
         color: "black",
-        padding: "20px 20px",
-        border: "none",
+        padding: "15px 15px",
+        border: "1px solid yellow",
         cursor: "pointer",
+        color: "white"
       }}
     >
       <FaAngleUp/>

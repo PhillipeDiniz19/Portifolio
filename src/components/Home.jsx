@@ -17,13 +17,13 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { saveAs } from 'file-saver';
 import pdfContent from '../download/Curriculo.pdf'
 import '../modelsCss/navbar.css'
-import { FaGithub } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
 
 
 
 
 function Home(){
+
+
 
     const handleDownload = () => {
         fetch(pdfContent)
@@ -43,9 +43,23 @@ function Home(){
           section.scrollIntoView({ behavior: 'smooth' });
         }
       };
-      const [active, setActive] = useState("nav_menu")
-    const [toggleIcon, setToggleIcon] = useState("nav_toggler");
-        const navToggle = () => {
+        const [active, setActive] = useState("nav_menu")
+        const [toggleIcon, setToggleIcon] = useState("nav_toggler");
+        const navToggle = (sectionId) => {
+            
+            setActive("nav_menu");
+          if (sectionId) {
+            // Obtém a posição da seção na página
+            const offsetTop = sectionId.offsetTop;
+        
+            // Scroll suave para a seção na página
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth",
+            });
+          }
+
+
             active === "nav_menu" 
             ? setActive('nav_menu nav_active')
             : setActive("nav_menu");
@@ -54,6 +68,8 @@ function Home(){
             toggleIcon === 'nav_toggler' 
             ? setToggleIcon('nav_toggler toggle')
             : setToggleIcon('nav_toggler');
+
+          
         };
 
     return(
@@ -63,10 +79,10 @@ function Home(){
              &#8249;<span>D</span>INIZ&#8260;&#8250;
             </a>
             <ul className={active}>
-               <label><li className='nav_item'><a href='#' className='nav_link'>HOME</a></li></label> 
-               <label><li className='nav_item'><a href='#minhaSecao' className='nav_link'>SOBRE</a></li></label>  
-               <label><li className='nav_item'><a href='#meusProjetos' className='nav_link'>PROJETOS</a></li></label>
-               <label><li className='nav_item'><a href='#contato' className='nav_link'>CONTATO</a></li></label>
+               <label><li className='nav_item'><a href='#' className='nav_link' onClick={() => navToggle("section1")}>HOME</a></li></label> 
+               <label><li className='nav_item'><a href='#minhaSecao' className='nav_link' onClick={() => navToggle("section1")}>SOBRE</a></li></label>  
+               <label><li className='nav_item'><a href='#meusProjetos' className='nav_link' onClick={() => navToggle("section1")}>PROJETOS</a></li></label>
+               <label><li className='nav_item'><a href='#contato' className='nav_link' onClick={() => navToggle("section1")}>CONTATO</a></li></label>
             </ul>
 
             <div className="icons">
@@ -85,7 +101,7 @@ function Home(){
     
             <main className="editado">
                 <aside>
-                    <h2><span>I'm</span> Phillipe Diniz <br/>  Cardoso </h2>
+                    <h2><span className="home-specs">I'm</span> Phillipe Diniz <br/>  Cardoso </h2>
                     <h3>Desenvolvedor Front-And</h3>
                     <ul className="lista-imagens">
                         <li><img src={imgagemEscolhida2} alt="HTML5"></img></li>

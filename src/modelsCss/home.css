@@ -1,6 +1,4 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 main {
     width: 1280;
@@ -26,7 +24,7 @@ h3{
     margin-bottom: 10px;
 }
 
-span{
+.home-specs{
     color: white;
 }
 
@@ -74,11 +72,6 @@ span{
     
     main{
         flex-direction: column;
-    }
-
-    h2{
-        font-size: 30px;
-        text-align: center;
     }
 
     h3{
