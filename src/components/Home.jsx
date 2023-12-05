@@ -9,7 +9,8 @@ import imgagemEscolhida3 from '../img/javascript.png'
 import imgagemEscolhida4 from '../img/mongodb.png'
 import imgagemEscolhida5 from '../img/nodejs.png'
 import imgagemEscolhida6 from '../img/react.png'
-import imgagemEscolhida7 from '../img/77d0a7c454e658833800528e748edbe9.png'
+import imgagemEscolhida7 from '../img/meninoHome.png'
+import imgagemEscolhida8 from '../img/meninoSobre.png'
 import calculadora from '../img/calculadoraIphone.png'
 import foto1 from '../img/homepage.png'
 import foto2 from '../img/Screenshot_1.png'
@@ -121,7 +122,7 @@ function Home(){
             
             <div className="About-main">
             <div>    
-                     <img src={imgagemEscolhida7} className="img-about" id="minhaSecao"></img>            
+                     <img src={imgagemEscolhida8} className="img-about" id="minhaSecao"></img>            
             </div>
 
             <article>
@@ -167,8 +168,8 @@ function Home(){
                             <div className="imagensprojetos">
                                 <img src={imgagemEscolhida6} alt="reactjs"></img>
                             </div>
-                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank">Portfólio</a></button>
+                            <button type="submit"><a href="https://phillipediniz.vercel.app/" target="_blank">Deploy</a></button>
+                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Portifolio" target="_blank">Portfólio</a></button>
                         </div> 
                     </div>
 

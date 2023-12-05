@@ -4,11 +4,6 @@
     color: white;
 }
 
-
-.titulos, .detalhes{
-    margin-left: 50px;
-}
-
 .titulos p {
     color: yellowgreen;
     font-size: 15px;
@@ -35,7 +30,7 @@
 
 .contatos h2 {
     color: white;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 0;
     font-size: 20px;
 
 }
@@ -61,7 +56,7 @@
 }
 
 .tamanho-icone{
-    font-size: 24px;
+    font-size: 30px;
     color: white;
 }
 
