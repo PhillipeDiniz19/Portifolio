@@ -87,10 +87,10 @@ function Home(){
             </ul>
 
             <div className="icons">
-                <label><a href='https://github.com/PhillipeDiniz19' target="_blank"><img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo.png" 
+                <label><a href='https://github.com/PhillipeDiniz19' target="_blank" rel="noreferrer"><img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo.png" 
                     alt="external-github-with-cat-logo-an-online-community-for-software-development-logo-regular-tal-revivo"/></a></label>  
 
-                <label><a href='https://www.linkedin.com/in/phillipe-diniz/' target="_blank"><img width="25" height="25" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin"/></a></label>               
+                <label><a href='https://www.linkedin.com/in/phillipe-diniz/' target="_blank" rel="noreferrer"><img width="25" height="25" src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png" alt="linkedin"/></a></label>               
             </div>
                       
             <div onClick={navToggle} className={toggleIcon}>
@@ -153,8 +153,8 @@ function Home(){
                                 <img src={imgagemEscolhida5} alt="NODEJS"></img>
                                 <img src={imgagemEscolhida4} alt="MONGODB"></img>
                             </div>                                   
-                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank">Portfólio</a></button>
+                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank" rel="noreferrer">Deploy</a></button>
+                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank" rel="noreferrer">Portfólio</a></button>
                         </div> 
                     </div>
 
@@ -168,8 +168,8 @@ function Home(){
                             <div className="imagensprojetos">
                                 <img src={imgagemEscolhida6} alt="reactjs"></img>
                             </div>
-                            <button type="submit"><a href="https://phillipediniz.vercel.app/" target="_blank">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Portifolio" target="_blank">Portfólio</a></button>
+                            <button type="submit"><a href="https://phillipediniz.vercel.app/" target="_blank" rel="noreferrer">Deploy</a></button>
+                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Portifolio" target="_blank" rel="noreferrer">Portfólio</a></button>
                         </div> 
                     </div>
 
@@ -185,11 +185,12 @@ function Home(){
                                 <img src={imgagemEscolhida1} alt="CSS3"></img>
                                 <img src={imgagemEscolhida3} alt="JAVASCRIPT"></img>
                             </div>
-                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank">Portfólio</a></button>
+                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank" rel="noreferrer">Deploy</a></button>
+                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank" rel="noreferrer">Portfólio</a></button>
                         </div> 
                     </div>
                </div> 
+               <p className="btnComing">New projects is coming...</p>
             </div>
             
     </div>   
