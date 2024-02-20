@@ -163,7 +163,7 @@ function Home(){
                         <div className="info-projetos">
                             <p>Este projeto busca mostrar todos meus conhecimentos em front-and aplicando
                                 em uma leading page demostrando minha habilidades e meus projetos na área. <br/>
-                                <span>REACTJS, CSS3</span>
+                                <span>REACTJS</span>
                             </p>
                             <div className="imagensprojetos">
                                 <img src={imgagemEscolhida6} alt="reactjs"></img>

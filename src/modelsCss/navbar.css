@@ -38,10 +38,11 @@ a{
 .navbar{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 8vh;
     background-color: rgb(0, 0, 0);
     z-index: 100;
@@ -51,7 +52,7 @@ a{
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 12pt;
 }
 
 .Logo span{
@@ -98,7 +99,7 @@ a{
         position:absolute;
         top: 8vh;
         right: 0;
-        height: 90vh;
+        height: 95vh;
         width: 100vw;
         background: rgb(10, 10, 10);
         flex-direction: column;
