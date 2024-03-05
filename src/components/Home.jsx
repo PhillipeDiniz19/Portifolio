@@ -103,7 +103,7 @@ function Home(){
             <main className="editado">
                 <aside>
                     <h2><span className="home-specs">I'm</span> Phillipe Diniz <br/>  Cardoso </h2>
-                    <h3>Desenvolvedor Front-And</h3>
+                    <h3>Desenvolvedor Front-End</h3>
                     <ul className="lista-imagens">
                         <li><img src={imgagemEscolhida2} alt="HTML5"></img></li>
                         <li><img src={imgagemEscolhida1} alt="CSS3"></img></li>
