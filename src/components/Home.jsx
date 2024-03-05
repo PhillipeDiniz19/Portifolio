@@ -16,7 +16,7 @@ import foto1 from '../img/homepage.png'
 import foto2 from '../img/Screenshot_1.png'
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { saveAs } from 'file-saver';
-import pdfContent from '../download/Curriculo.pdf'
+import pdfContent from '../download/CurriculoPhillipe.pdf'
 import '../modelsCss/navbar.css'
 
 
