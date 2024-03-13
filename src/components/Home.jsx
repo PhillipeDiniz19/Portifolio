@@ -1,8 +1,12 @@
 import React, {useState} from "react";
+
+
 import '../modelsCss/home.css'
 import '../modelsCss/globalcss.css'
 import '../modelsCss/About.css'
 import '../modelsCss/projetos.css'
+import '../modelsCss/navbar.css'
+
 import imgagemEscolhida1 from '../img/css.png'
 import imgagemEscolhida2 from '../img/htmlç.png'
 import imgagemEscolhida3 from '../img/javascript.png'
@@ -11,32 +15,31 @@ import imgagemEscolhida5 from '../img/nodejs.png'
 import imgagemEscolhida6 from '../img/react.png'
 import imgagemEscolhida7 from '../img/meninoHome.png'
 import imgagemEscolhida8 from '../img/meninoSobre.png'
-import calculadora from '../img/calculadoraIphone.png'
-import foto1 from '../img/homepage.png'
-import foto2 from '../img/Screenshot_1.png'
+
+import fotoProjeto1 from '../img/homepage.png'
+import fotoProjeto2 from '../img/ProjetoAPI.png'
+import fotoProjeto3 from '../img/ProjetoFinancas.png'
+
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { saveAs } from 'file-saver';
 import pdfContent from '../download/CurriculoPhillipe.pdf'
-import '../modelsCss/navbar.css'
 
 
 
 
 function Home(){
 
-
-
     const handleDownload = () => {
         fetch(pdfContent)
           .then((res) => res.blob())
           .then((blob) => {
-            // Salvando o Blob como arquivo PDF
             saveAs(blob, 'PhillipeDiniz.pdf');
           })
           .catch((error) => {
             console.error('Houve um erro:', error);
           });
       };
+
 
     const ancorarSobre = () => {
         const section = document.getElementById('minhaSecao');
@@ -50,27 +53,19 @@ function Home(){
             
             setActive("nav_menu");
           if (sectionId) {
-            // Obtém a posição da seção na página
             const offsetTop = sectionId.offsetTop;
-        
-            // Scroll suave para a seção na página
             window.scrollTo({
               top: offsetTop,
               behavior: "smooth",
             });
           }
-
-
             active === "nav_menu" 
             ? setActive('nav_menu nav_active')
             : setActive("nav_menu");
 
-          // TogglerIcon
             toggleIcon === 'nav_toggler' 
             ? setToggleIcon('nav_toggler toggle')
             : setToggleIcon('nav_toggler');
-
-          
         };
 
     return(
@@ -80,7 +75,7 @@ function Home(){
              &#8249;<span>D</span>INIZ&#8260;&#8250;
             </a>
             <ul className={active}>
-               <label><li className='nav_item'><a href='#' className='nav_link' onClick={() => navToggle("section1")}>HOME</a></li></label> 
+               <label><li className='nav_item'><a href='/' className='nav_link' onClick={() => navToggle("section1")}>HOME</a></li></label> 
                <label><li className='nav_item'><a href='#minhaSecao' className='nav_link' onClick={() => navToggle("section1")}>SOBRE</a></li></label>  
                <label><li className='nav_item'><a href='#meusProjetos' className='nav_link' onClick={() => navToggle("section1")}>PROJETOS</a></li></label>
                <label><li className='nav_item'><a href='#contato' className='nav_link' onClick={() => navToggle("section1")}>CONTATO</a></li></label>
@@ -144,49 +139,65 @@ function Home(){
                     <br/>
                <div className="ProjetosOnline">
                     <div className="elementor-filho">
-                            <img src={foto2}></img>
+                            <img src={fotoProjeto2}></img>
                         <div className="info-projetos">
-                            <p>Este projeto busca criar uma pagina de Login/Registro para implementar em um site 
-                                que deseja ter esse mecanismo. <br/> <span>REACTJS, NODEJS, MONGODB</span></p> 
+                            <p>Este projeto se concentra em desenvolver uma aplicação que consome uma API de filmes, 
+                                permitindo aos usuários explorar e descobrir uma vasta coleção de filmes.<br/> <span>REACTJS</span></p> 
                             <div className="imagensprojetos">
-                                <img src={imgagemEscolhida6} alt="REACTJS"></img>
-                                <img src={imgagemEscolhida5} alt="NODEJS"></img>
-                                <img src={imgagemEscolhida4} alt="MONGODB"></img>
+                                <img src={imgagemEscolhida6} alt="reactjs"></img>
                             </div>                                   
-                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank" rel="noreferrer">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank" rel="noreferrer">Portfólio</a></button>
+                            <button type="submit"><a 
+                                href="https://filmes-chi.vercel.app/" 
+                                target="_blank" 
+                                rel="noreferrer" 
+                                alt="deploy-projeto">Deploy</a>
+                            </button>
+                            <button type="submit"><a 
+                            href="https://github.com/PhillipeDiniz19/MovieDBAPI" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            alt="link-projeto">Portfólio</a>
+                            </button>
                         </div> 
                     </div>
 
                     <div className="elementor-filho">
-                            <img src={foto1}></img>
+                            <img src={fotoProjeto1}></img>
                         <div className="info-projetos">
                             <p>Este projeto busca mostrar todos meus conhecimentos em front-and aplicando
                                 em uma leading page demostrando minha habilidades e meus projetos na área. <br/>
-                                <span>REACTJS</span>
-                            </p>
-                            <div className="imagensprojetos">
-                                <img src={imgagemEscolhida6} alt="reactjs"></img>
-                            </div>
-                            <button type="submit"><a href="https://phillipediniz.vercel.app/" target="_blank" rel="noreferrer">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Portifolio" target="_blank" rel="noreferrer">Portfólio</a></button>
-                        </div> 
-                    </div>
-
-                    <div className="elementor-filho">
-                            <img src={calculadora}></img>
-                        <div className="info-projetos">
-                            <p>Como um dos meus primeiros projetos na programação busquei desenvolver uma calculadora igual a do iphone.
-                                 <br/>
-                                <span>HTML5, CSS3, JAVASCRIPT</span>
+                                <span>Html5, Css3, ReactJS</span>
                             </p>
                             <div className="imagensprojetos">
                                 <img src={imgagemEscolhida2} alt="HTML5"></img>
                                 <img src={imgagemEscolhida1} alt="CSS3"></img>
-                                <img src={imgagemEscolhida3} alt="JAVASCRIPT"></img>
+                                <img src={imgagemEscolhida6} alt="REACTJS"></img>
                             </div>
-                            <button type="submit"><a href="https://calculadoracelular.netlify.app" target="_blank" rel="noreferrer">Deploy</a></button>
-                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Calculadora-Iphone" target="_blank" rel="noreferrer">Portfólio</a></button>
+                            <button type="submit"><a href="https://phillipediniz.vercel.app/" target="_blank" rel="noreferrer" alt="deploy-projeto">Deploy</a></button>
+                            <button type="submit"><a href="https://github.com/PhillipeDiniz19/Portifolio" target="_blank" rel="noreferrer" alt="link-projeto">Portfólio</a></button>
+                        </div> 
+                    </div>
+
+                    <div className="elementor-filho">
+                            <img src={fotoProjeto3}></img>
+                        <div className="info-projetos">
+                            <p>
+                                Este projeto se concentra na criação de um aplicativo CRUD
+                                para calcular e gerenciar as finanças do mês.
+                                 <br/>
+                                <span>Reactjs, NodeJS e MongoDB</span>
+                            </p>
+                            <div className="imagensprojetos">
+                                <img src={imgagemEscolhida6} alt="REACTJS"></img>
+                                <img src={imgagemEscolhida5} alt="NODEJS"></img>
+                                <img src={imgagemEscolhida4} alt="MONGODB"></img>
+                            </div>
+                            <button type="submit">
+                                <a href="https://github.com/PhillipeDiniz19/financas-girlfriend" target="_blank" rel="noreferrer" alt="deploy-projeto">Deploy</a>
+                            </button>
+                            <button type="submit">
+                                <a href="https://github.com/PhillipeDiniz19/financas-girlfriend" target="_blank" rel="noreferrer" alt="link-projeto">Portfólio</a>
+                            </button>
                         </div> 
                     </div>
                </div> 

@@ -1,6 +1,5 @@
 
 .Main-projetos{
-    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
     border-radius: 50px;
     box-shadow: 0px -1px 17px -4px rgba(255, 255, 255, 0.5);
     padding: 20px;
@@ -48,8 +46,7 @@
 }
 
 .elementor-filho img {
-    width: 100%;
-    max-width: 30%;
+    width: 30%;
     margin-top: 10px;
     transition: 0.2s;
     
@@ -104,7 +101,6 @@ span {
 }
 
 .btnComing{
-    background-color: black;
     color: white;
     border: none;
 }

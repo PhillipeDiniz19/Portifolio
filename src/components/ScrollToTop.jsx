@@ -6,18 +6,15 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) { // Defina a quantidade de rolagem necessária para mostrar o botão
+      if (window.pageYOffset > 100) { 
         setShowButton(true);
       } else {
         setShowButton(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    // Limpe o event listener quando o componente é desmontado
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Array vazio para executar o efeito apenas uma vez após a montagem do componente
+  }, []); 
 
   const handleClick = () => {
     window.scrollTo({

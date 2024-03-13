@@ -44,7 +44,6 @@ a{
     align-items: center;
     justify-content: space-evenly;
     height: 8vh;
-    background-color: rgb(0, 0, 0);
     z-index: 100;
 }
 
