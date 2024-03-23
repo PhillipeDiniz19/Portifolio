@@ -1,4 +1,7 @@
 MEU PRINCIPAL PROJETO.
 
-Este projeto busca aplicar meus conhecimentos em front-and criando uma leandig page sobre minha vida na programação.
-tecnologias usadas: HTML5, CSS3, REACTJS.
+Este projeto tem como objetivo criar um portfólio web no qual eu
+possa apresentar de forma abrangente todos os meus conhecimentos
+aplicados em um site. Além disso, visa destacar minhas habilidades
+técnicas (hard skills) e habilidades interpessoais (soft skills).
+Tecnologias: ReactJS, Html5, Css3
