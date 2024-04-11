@@ -3,10 +3,6 @@ import Home from './components/Home'
 import Contato from './components/contato';
 import ScrollToTop from './components/ScrollToTop';
 
-
-
-
-
 function App() {
 
   return (
