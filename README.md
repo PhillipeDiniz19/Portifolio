@@ -6,3 +6,4 @@ aplicados em um site. Além disso, visa destacar minhas habilidades
 técnicas (hard skills) e habilidades interpessoais (soft skills)
 Tecnologias:
 - ReactJs
+- Html5
