@@ -4,4 +4,5 @@ MEU PRINCIPAL PROJETO.
 possa apresentar de forma abrangente todos os meus conhecimentos
 aplicados em um site. Além disso, visa destacar minhas habilidades
 técnicas (hard skills) e habilidades interpessoais (soft skills)
-Tecnologias: ReactJS, Html5, Css3
+Tecnologias:
+- ReactJs
