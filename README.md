@@ -7,3 +7,4 @@ técnicas (hard skills) e habilidades interpessoais (soft skills)
 Tecnologias:
 - ReactJs
 - Html5
+- Css3
