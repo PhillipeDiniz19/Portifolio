@@ -8,3 +8,4 @@ Tecnologias:
 - ReactJs
 - Html5
 - Css3
+- Novos projetos a caminho
